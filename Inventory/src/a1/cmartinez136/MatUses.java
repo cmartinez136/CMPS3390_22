@@ -5,5 +5,5 @@ public enum MatUses {
     UsedByAlchemists,
     UsedByCarpenters,
     UsedByBlacksmiths,
-    UsedByCulinarians
+    UsedByChefs
 }
