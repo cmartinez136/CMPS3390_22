@@ -18,7 +18,6 @@ public class Main {
         List<Item> items = new ArrayList<>();
         Scanner scan = new Scanner(System.in); //takes info from console
 
-
         System.out.print("How many items do you want: ");
         int itemCnt = Integer.parseInt(scan.nextLine());
         for(int i=0; i < itemCnt; i++){
