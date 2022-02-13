@@ -60,7 +60,7 @@ public class Main{
         MergeSort m2 = new MergeSort(t3.gettItems(), t4.gettItems());
         m2.start();
         m2.join();
-
+        //Merging both mergesorts
         MergeSort m3 = new MergeSort(m1.getSortedItems(), m2.getSortedItems());
         long endTime = System.nanoTime();
         long duration = (endTime - startTime)/1000000;
