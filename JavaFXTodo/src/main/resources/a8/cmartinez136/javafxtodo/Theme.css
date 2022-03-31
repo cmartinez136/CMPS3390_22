@@ -1,0 +1,18 @@
+.vbox, .list-view{
+    -fx-background-color: #4a3e4a;
+}
+.list-cell:odd{
+    -fx-background-color: #ded8de;
+}
+.list-cell:even{
+    -fx-background-color: #f4f2f4;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected{
+    -fx-background-color: #4a3e4a;
+}
+.tabpane, .tab{
+    -fx-background-color: #fff;
+}
+.hbox, .button {
+    -fx-background-color: #4a3e4a;
+}
