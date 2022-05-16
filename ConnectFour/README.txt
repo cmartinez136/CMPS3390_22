@@ -13,5 +13,6 @@ On diagonal & winning check:
 ---------------
 I had THE most trouble getting this to work. It only works if you win diagonally if you start bottom to up.
 I couldn't get the diagonal from up to bottom to work for some reason. If I put in more time and research into it,
-I probably would have gotten it since it must be a simple mistake I'm missing in the code.
+I probably would have gotten it since it must be a simple mistake I'm overlooking since I'm basing it off my previous diagonal check.
+
 Drawing out the grid myself did help me with some debugging overall.
