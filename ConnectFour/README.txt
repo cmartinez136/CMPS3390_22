@@ -16,3 +16,9 @@ I couldn't get the diagonal from up to bottom to work for some reason. If I put 
 I probably would have gotten it since it must be a simple mistake I'm overlooking since I'm basing it off my previous diagonal check.
 
 Drawing out the grid myself did help me with some debugging overall.
+
+Reset button:
+-----------------
+I scratched my original concept of having a pause button since I think there wasn't really a need for one.
+I did have a reset button, but mostly for easily testing the board. It is useful if the user would want to
+play again too. 
