@@ -12,7 +12,7 @@ import java.util.List;
 public class Peg {
     private Point pos = new Point();
     int radius;
-    List<Paint> paints = new ArrayList<>();
+    ArrayList<Paint> paints = new ArrayList<>();
     int selectedPaint = 0;
 
     public Peg(int selectedPaint, int radius, Point pos) {

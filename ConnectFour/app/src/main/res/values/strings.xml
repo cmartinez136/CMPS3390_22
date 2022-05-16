@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ConnectFour</string>
+    <string name="play">Play</string>
+    <string name="playerturn">Player Turn:</string>
+    <string name="winner">Winner!</string>
+    <string name="reset">Reset</string>
+</resources>

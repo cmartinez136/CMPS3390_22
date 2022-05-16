@@ -1,4 +1,4 @@
-package a10.cmartinez136.mindmaster;
+package project.cmartinez136.connectfour;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -13,31 +13,24 @@ public class GameView extends SurfaceView implements Runnable {
     private boolean isPlaying;
     private Board board;
 
-    public GameView(Context context, Point screenSize) {
+    public GameView(Context context, Board board) {
         super(context);
-        board = new Board(screenSize, getResources(), (GameActivity)context);
+        this.board = board;
     }
 
     @Override
-    public void run() {
+    public void run(){
         while(isPlaying){
             update();
             draw();
             sleep();
-            sleep();
         }
     }
 
-    private void update(){
-        if(getHolder().getSurface().isValid()){
-            Canvas canvas = getHolder().lockCanvas();
-            canvas.drawColor(Color.BLACK);
-            board.draw(canvas);
-            getHolder().unlockCanvasAndPost(canvas);
-        }
+    private void update() {
     }
 
-    private void draw(){
+    public void draw(){
 
     }
 
@@ -49,7 +42,6 @@ public class GameView extends SurfaceView implements Runnable {
             e.printStackTrace();
         }
     }
-
     public void resume(){
         isPlaying = true;
         thread = new Thread(this);
@@ -69,7 +61,6 @@ public class GameView extends SurfaceView implements Runnable {
         if(event.getAction() == MotionEvent.ACTION_UP){
             int x = Math.round(event.getX());
             int y = Math.round(event.getY());
-            board.onClick(x,y);
         }
         return true;
     }
